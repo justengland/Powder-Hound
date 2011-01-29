@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight" 
+    android:padding="8dip">
+	
+	<ImageView 
+		android:id="@+id/snowIcon" 
+		android:layout_width="100dip"
+		android:layout_height="100dip" 
+		android:layout_alignParentLeft="true" />
+		
+	<LinearLayout
+        android:orientation="vertical"    
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="fill_parent">
+	
+		<TextView 
+			android:id="@+id/resortLabel" 
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="16dip" 
+			android:textSize="18sp"
+			android:layout_width="wrap_content"
+			android:textStyle="bold"
+			android:layout_toRightOf="@+id/snowIcon" />
+			
+		<TextView 
+			android:id="@+id/snowReportLabel" 
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+			android:layout_marginLeft="8dip" 
+			android:layout_alignParentBottom="true"
+			android:layout_width="wrap_content"
+			android:layout_toRightOf="@+id/snowIcon" />		
+	</LinearLayout>
+		
+</LinearLayout>
